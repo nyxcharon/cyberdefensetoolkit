@@ -1,0 +1,14 @@
+#! /bin/bash
+#############################################################################
+# Script that flushes ip-tables periodically so you don't lock yourself out
+# While working on a remote server.
+# Run in a screen session or with nohup for best results
+#
+# Author: Barry Martin
+#############################################################################
+
+while true
+do
+    sudo iptables -F
+    sleep 45
+done
