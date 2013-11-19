@@ -1,0 +1,12 @@
+*list all
+netsh advfirewall firewall show rule name=all
+
+*disable/enable
+netsh advfirewall set allprofiles state on
+netsh advfirewall set allprofiles state off
+
+*reset all rules
+netsh advfirewall reset
+
+
+
