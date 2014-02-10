@@ -8,7 +8,7 @@ TODO:
 Linux
 ----------
 
-- [ ]Generic Ip tables rules 
+- [x]Generic Ip tables rules 
 - [ ]Meta packages (ubuntu,centos)
 - [ ]Apache Virtualhost
 - [ ]FTP configs
