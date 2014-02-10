@@ -1,0 +1,45 @@
+
+UFW - Uncomplicated Firewall
+
+To enable:
+sudo ufw enable
+
+To disable:
+sudo ufw disable
+
+Check status:
+sudu ufw status verbose
+
+Allow:
+-Basic syntax
+sudo ufw allow port#/(optional)protocol
+
+-Example
+sudo ufw allow 53
+sudo ufw allow 53/tcp
+sudo ufw allow 53/udp
+
+Deny:
+-Same as allow, replace allow with the word deny.
+
+Delete a rule:
+sudo ufw delete deny 80/tcp
+
+UFW is complaint with all entries in /etc/services.
+As such service names can be used instead of port numbers
+-Example
+sudo ufw allow ssh
+sudo ufw deny mysql
+
+Check status of rules:
+sudo ufw status
+
+Allow/Deny a specific IP
+sudo ufw allow from 111.11.111.11
+sudo ufw deny from 111.11.111.11
+
+Allow/Deny by ip,proto
+sudo ufw allow from <target> to <destination> port <port number> proto <protocol name>
+sudo ufw allow from 192.168.0.4 to any port 22 proto tcp
+sudo ufw deny from 192.168.0.1 to any port 22
+
