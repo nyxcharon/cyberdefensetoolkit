@@ -13,16 +13,16 @@ Linux
 - [ ]Apache Virtualhost
 - [ ]FTP configs
 - [ ]Password check scripts
-- [ ]Account check scripts
+- [x]Account check scripts
 - [ ]Log checking script
-- [ ]Active user script
+- [x]Active user script
 - [ ]Cronjob check script
 - [ ]Selinux checker
 - [ ]log crawler
 - [ ]Fail2ban    
 - [ ]UID checker   
-- [ ]Check running services/listening ports   
-- [ ]Disk Space   
+- [x]Check running services/listening ports   
+- [x]Disk Space   
 
 
 Windows
