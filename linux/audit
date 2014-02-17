@@ -1,6 +1,8 @@
 #! /bin/bash
 ###############################################
 # Monitor various services on the machine
+# Use -c to list cron jobs.
+# Run with the watch command for best results.
 # @Bobby Martin
 ###############################################
 
