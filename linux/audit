@@ -1,0 +1,33 @@
+#! /bin/bash
+
+#Space Check
+echo "Space Check----------------------------------------"
+df -h
+echo ""
+
+#Accounts - Check for users with shell, gid/uid=0
+echo "Enabled account check------------------------------"
+cat /etc/passwd | grep bash | cut -d":" -f1,6,7
+echo ""
+
+#Currently logged in users
+echo "Users logged in------------------------------------" 
+w -sh
+echo ""
+
+#Resources
+echo "Resource usage-------------------------------------"
+uptime
+echo ""
+
+#Listening ports
+echo "Listening ports------------------------------------"
+netstat -tulpn
+echo ""
+
+#Service check
+echo "Service check--------------------------------------"
+service --status-all > /tmp/a 2>/dev/null
+cat /tmp/a | grep + 
+echo ""
+
