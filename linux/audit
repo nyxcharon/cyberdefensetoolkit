@@ -35,3 +35,14 @@ service --status-all > /tmp/a 2>/dev/null
 cat /tmp/a | grep + 
 echo ""
 
+#Cron check
+if [ -f ./check-cron ]
+   then
+    if [ "$1" == "-c" ]
+       then
+	echo "List of crons"
+	./check-cron
+    fi
+fi
+
+
